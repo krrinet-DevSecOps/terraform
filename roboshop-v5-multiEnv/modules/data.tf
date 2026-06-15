@@ -20,3 +20,7 @@ data "aws_route53_zone" "selected" {
   name         = var.domain_name
   private_zone = false
 }
+
+data "vault_generic_secret" "ssh_cred" {
+  path = "roboshop-${var.env_name}/ssh_cred"
+}
