@@ -9,4 +9,5 @@ module "ec2" {
     instance_type = each.value["instance_type"]
     domain_name   = var.domain_name
     internal      = each.value["internal"]
+    vault_token   = var.vault_token
 }
