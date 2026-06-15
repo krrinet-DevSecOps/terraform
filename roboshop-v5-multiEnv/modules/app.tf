@@ -14,7 +14,7 @@ resource "null_resource" "app" {
             "pip3.11 install ansible",
             "type ansible",
             "pip3.11 install hvac",
-            "ansible-pull -U https://github.com/B60-CloudDevOps/roboshop-ansible.git roboshop/roboshop-pull.yml -e env=${var.env_name} -e component=${var.name}"
+            "ansible-pull -U https://github.com/B60-CloudDevOps/roboshop-ansible.git roboshop/roboshop-pull.yml -e env=${var.env_name} -e component=${var.name} -e token=${var.vault_token}"
         ]
     }
 }
