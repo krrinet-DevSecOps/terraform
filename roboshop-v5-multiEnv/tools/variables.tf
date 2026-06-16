@@ -30,4 +30,4 @@ variable "tools" {
     }
 }
 
-variable "vault_token" {}
+#variable "vault_token" {}
