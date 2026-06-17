@@ -11,7 +11,8 @@ data "aws_ami" "latest" {
 }
 
 # Datasource for security group, we will use this in the EC2 module to attach the security group to the instance
-data "aws_security_group" "selected" {
+#data "aws_security_group" "selected" {
+data "aws_security_group" "sg_name" {
   name = var.sg_name
 }
 
