@@ -10,7 +10,7 @@ variable "ami_name" {
 
 variable "sg_name" {
   type = string
-  default = "b60-allow-all"
+  default = "B60-SecurityGroup"
 }
 
 variable "domain_name" {
