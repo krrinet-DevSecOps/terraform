@@ -44,5 +44,5 @@ components = {
 
 env_name = "test"
 ami_name = "DevOps-LabImage-RHEL9"
-sg_name = "b60-allow-all"
+sg_name = "B60-SecurityGroup"
 domain_name = "krrinet.online"
